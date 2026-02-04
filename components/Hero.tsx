@@ -7,13 +7,15 @@ import Link from 'next/link';
 export default function Hero() {
     const [isBookingOpen, setIsBookingOpen] = useState(false);
     return (
-        <section className="relative h-[55vh] md:h-screen w-full overflow-hidden bg-black/40">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105"
-                style={{ backgroundImage: "url('/images/ratan-mahal-main-view.jpg')" }}
-            >
-                <div className="absolute inset-0 bg-black/40 md:bg-black/30 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+        <section className="relative h-[55vh] md:h-screen w-full bg-black/40">
+            {/* Background Image Wrapper */}
+            <div className="absolute inset-0 overflow-hidden">
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105"
+                    style={{ backgroundImage: "url('/images/ratan-mahal-main-view.jpg')" }}
+                >
+                    <div className="absolute inset-0 bg-black/40 md:bg-black/30 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                </div>
             </div>
 
             <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white space-y-6 pt-10 md:pt-20">
@@ -44,7 +46,7 @@ export default function Hero() {
 
                         {/* Booking Options Popup */}
                         {isBookingOpen && (
-                            <div className="absolute top-full left-0 mt-4 w-64 bg-white rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-5 duration-200 border border-gold/20 text-left z-50">
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-72 bg-white rounded-xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-5 duration-200 border border-gold/20 text-left z-50">
                                 <div className="p-3 bg-royal-brown text-white text-center text-sm font-serif tracking-wider">
                                     Select Booking Partner
                                 </div>

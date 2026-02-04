@@ -2,15 +2,15 @@
 
 export default function Gallery() {
     const images = [
-        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1000&auto=format&fit=crop", // Exterior
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Hotel View
+        "/images/ratan-mahal-exterior.jpg", // Main Exterior
+        "/images/wedding-stage-night.png", // Grand Wedding Stage
+        "/images/pool-day-clean.png", // Pool Day
+        "/images/exterior-night-vertical.jpg", // Vertical Exterior
+        "/images/wedding-stage-side.png", // Wedding Stage Side
+        "/images/pool-event-day.png", // Pool Event Setup
         "https://images.unsplash.com/photo-1590490360182-f33dfe616d46?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Bedroom
         "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Dining
-        "https://images.unsplash.com/photo-1571896349842-68cfd8027a0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Pool
-        "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Hall
         "https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Food
-        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Suite
-        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80", // Room
     ];
 
     return (

@@ -40,22 +40,22 @@ export default function Home() {
             <div className="w-full md:flex-1 grid grid-cols-2 gap-4 h-[300px] md:h-[400px]">
               <div className="col-span-1 row-span-2 relative rounded-2xl overflow-hidden shadow-lg group">
                 <img
-                  src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1000"
-                  alt="Exterior View"
+                  src="/images/ratan-mahal-exterior.jpg"
+                  alt="Ratan Mahal Exterior View"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="col-span-1 relative rounded-2xl overflow-hidden shadow-lg h-32 md:h-48 group">
                 <img
-                  src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="Pool"
+                  src="/images/pool-day-clean.png"
+                  alt="Swimming Pool"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="col-span-1 relative rounded-2xl overflow-hidden shadow-lg h-32 md:h-48 group">
                 <img
-                  src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                  alt="Room"
+                  src="/images/wedding-stage-night.png"
+                  alt="Grand Weddings"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>

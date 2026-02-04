@@ -29,13 +29,21 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
-                <Link href="/" className="flex flex-col items-center">
-                    <span className={`text-2xl font-bold font-serif ${showSolidNav ? 'text-royal-brown' : 'text-white'}`}>
-                        Ratan Mahal
-                    </span>
-                    <span className={`text-[10px] tracking-widest uppercase ${showSolidNav ? 'text-gold-dark' : 'text-gold'}`}>
-                        Resort & Hotel
-                    </span>
+                {/* Logo */}
+                <Link href="/" className="flex items-center gap-2">
+                    <img
+                        src="/images/logo.jpg"
+                        alt="Ratan Mahal Logo"
+                        className="h-12 w-12 rounded-full border-2 border-gold object-cover"
+                    />
+                    <div className="flex flex-col">
+                        <span className={`text-xl font-bold font-serif leading-none ${showSolidNav ? 'text-royal-brown' : 'text-white'}`}>
+                            Ratan Mahal
+                        </span>
+                        <span className={`text-[10px] tracking-widest uppercase ${showSolidNav ? 'text-gold-dark' : 'text-gold'}`}>
+                            Resort & Hotel
+                        </span>
+                    </div>
                 </Link>
 
                 {/* Desktop Menu */}

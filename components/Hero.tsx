@@ -8,7 +8,7 @@ export default function Hero() {
             {/* Background Image (Placeholder until real images) */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=3270&auto=format&fit=crop')" }}
+                style={{ backgroundImage: "url('/images/hero-desktop.png')" }}
             >
                 <div className="absolute inset-0 bg-black/40 md:bg-black/30 bg-gradient-to-t from-black via-transparent to-transparent"></div>
             </div>

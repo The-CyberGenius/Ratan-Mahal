@@ -55,7 +55,7 @@ export default function Contact() {
 
                         <div className="h-64 rounded-2xl overflow-hidden shadow-lg border border-gold/30">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14175.698964036667!2d74.60673854999999!3d28.07727405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cb71112870dbd%3A0xc3cfc37e58df3538!2sRatan%20Mahal%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2sin!4v1707123456789!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4295.5357512603905!2d74.595945!3d28.0617218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3914b98222df83a7%3A0x50dcbdf8587dc890!2sRatan%20Mahal%20Resort%20-%20Hotel%20%26%20Restaurant!5e1!3m2!1sen!2sin!4v1770237279792!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}

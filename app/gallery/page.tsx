@@ -2,6 +2,7 @@
 
 export default function Gallery() {
     const images = [
+        "/images/event-setup-large.jpg", // New Event Setup
         "/images/ratan-mahal-exterior.jpg", // Main Exterior
         "/images/wedding-stage-night.png", // Grand Wedding Stage
         "/images/pool-day-clean.png", // Pool Day

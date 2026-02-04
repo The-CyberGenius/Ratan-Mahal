@@ -31,7 +31,7 @@ export default function Hero() {
                     </p>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-4 mt-8 animate-in slide-in-from-bottom-5 duration-1000 delay-300 transform scale-90 md:scale-100">
+                <div className="relative z-20 flex flex-col md:flex-row gap-4 mt-8 animate-in slide-in-from-bottom-5 duration-1000 delay-300 transform scale-90 md:scale-100">
                     <div className="relative">
                         <button
                             onClick={(e) => {

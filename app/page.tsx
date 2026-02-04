@@ -40,7 +40,7 @@ export default function Home() {
             <div className="w-full md:flex-1 grid grid-cols-2 gap-4 h-[300px] md:h-[400px]">
               <div className="col-span-1 row-span-2 relative rounded-2xl overflow-hidden shadow-lg group">
                 <img
-                  src="/images/ratan-mahal-exterior.jpg"
+                  src="/images/ratan-mahal-main-view.jpg"
                   alt="Ratan Mahal Exterior View"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

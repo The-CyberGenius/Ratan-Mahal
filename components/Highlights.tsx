@@ -6,9 +6,9 @@ export default function Highlights() {
         { icon: Coffee, label: 'Free Breakfast' },
         { icon: Car, label: 'Free Parking' },
         { icon: Waves, label: 'Swimming Pool' },
-        { icon: Utensils, label: 'Restaurant' },
+        { icon: Utensils, label: 'Separate Veg Kitchen' },
         { icon: Baby, label: 'Child Friendly' },
-        { icon: Sparkles, label: 'Room Service' },
+        { icon: Sparkles, label: 'Party Buffets' },
         { icon: Accessibility, label: 'Accessible' },
     ];
 

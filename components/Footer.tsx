@@ -14,7 +14,7 @@ export default function Footer() {
                         </p>
                         <div className="flex gap-4">
                             <a href="#" className="hover:text-gold transition-colors"><Facebook size={20} /></a>
-                            <a href="#" className="hover:text-gold transition-colors"><Instagram size={20} /></a>
+                            <a href="https://instagram.com/ratan_mahal_resort" target="_blank" className="hover:text-gold transition-colors"><Instagram size={20} /></a>
                             <a href="#" className="hover:text-gold transition-colors"><Twitter size={20} /></a>
                         </div>
                     </div>
@@ -45,7 +45,10 @@ export default function Footer() {
                             </li>
                             <li className="flex gap-3 items-center">
                                 <Phone className="text-gold shrink-0" size={18} />
-                                <a href="tel:08854033167" className="hover:text-gold">088540 33167</a>
+                                <div className="flex flex-col">
+                                    <a href="tel:8854033167" className="hover:text-gold">88540 33167</a>
+                                    <a href="tel:8854893167" className="hover:text-gold">88548 93167</a>
+                                </div>
                             </li>
                             <li className="flex gap-3 items-center">
                                 <Mail className="text-gold shrink-0" size={18} />

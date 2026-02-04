@@ -13,37 +13,51 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 space-y-6">
-              <span className="text-gold font-bold tracking-widest uppercase text-xs">About Ratan Mahal</span>
+              <span className="text-gold font-bold tracking-widest uppercase text-xs">Most Loved Destination Wedding Resort</span>
               <h2 className="text-3xl md:text-5xl font-serif text-royal-brown leading-tight">
-                Luxury Stay & <br />
-                <span className="text-gold-dark">Royal Experience</span>
+                Choice of <br />
+                <span className="text-gold-dark">Celebrities & VVIPs</span>
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Nestled on the Sardarshahar Megha Highway, Ratan Mahal Resort offers a peaceful escape in Ratangarh.
-                Whether you are traveling for business, planning a dream wedding, or looking for a family getaway,
-                our resort provides the perfect blend of traditional Rajasthani hospitality and modern comfort.
+                Ratan Mahal is the <b>most loved destination wedding resort</b> in Ratangarh.
+                With separate veg kitchens, the best and largest party buffets, and packages that fit every budget—from Celeb Luxe to Mid-Budget.
+                Experience an <i>Epic Bridal Entry</i> and a mesmerizing vibe that thousands of highly satisfied guests recommend.
               </p>
               <p className="text-gray-600 leading-relaxed font-hindi">
-                रतन महल रिसॉर्ट में आपका स्वागत है। हम आपको सरदारशहर मेघा हाईवे पर एक शानदार और आरामदायक अनुभव प्रदान करते हैं।
-                शादी हो या पारिवारिक यात्रा, यहाँ हर पल खास बनता है।
+                रतन महल रिसॉर्ट में आपका स्वागत है। शादियों के लिए सबसे पसंदीदा जगह, जहाँ आपको मिलती है विशेष सुविधाएँ और
+                <b>Separate Veg Kitchen</b>। सेलिब्रिटीज और VVIPs की पहली पसंद।
               </p>
               <div className="pt-4">
                 <button className="text-royal-brown border-b-2 border-gold font-bold pb-1 hover:text-gold transition-colors">
-                  Read Our Story
+                  Explore Wedding Packages
                 </button>
               </div>
             </div>
 
             {/* Image Grid Placeholder */}
-            <div className="flex-1 grid grid-cols-2 gap-4 h-[400px]">
-              <div className="col-span-1 row-span-2 relative rounded-2xl overflow-hidden shadow-lg bg-gray-200">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">Exterior View</div>
+            {/* Image Grid */}
+            {/* Image Grid */}
+            <div className="w-full md:flex-1 grid grid-cols-2 gap-4 h-[300px] md:h-[400px]">
+              <div className="col-span-1 row-span-2 relative rounded-2xl overflow-hidden shadow-lg group">
+                <img
+                  src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1000"
+                  alt="Exterior View"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
-              <div className="col-span-1 relative rounded-2xl overflow-hidden shadow-lg h-48 bg-gray-200">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">Pool</div>
+              <div className="col-span-1 relative rounded-2xl overflow-hidden shadow-lg h-32 md:h-48 group">
+                <img
+                  src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Pool"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
-              <div className="col-span-1 relative rounded-2xl overflow-hidden shadow-lg h-48 bg-gray-200">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">Room</div>
+              <div className="col-span-1 relative rounded-2xl overflow-hidden shadow-lg h-32 md:h-48 group">
+                <img
+                  src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  alt="Room"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
             </div>
           </div>

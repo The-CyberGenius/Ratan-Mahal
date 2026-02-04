@@ -2,11 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, CalendarCheck } from 'lucide-react';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+    const isHome = pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,18 +19,21 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Force white background on non-home pages, or if scrolled
+    const showSolidNav = !isHome || isScrolled;
+
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-4'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${showSolidNav ? 'bg-white/95 backdrop-blur-md shadow-md py-2' : 'bg-transparent py-4'
                 }`}
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/" className="flex flex-col items-center">
-                    <span className={`text-2xl font-bold font-serif ${isScrolled ? 'text-royal-brown' : 'text-white'}`}>
+                    <span className={`text-2xl font-bold font-serif ${showSolidNav ? 'text-royal-brown' : 'text-white'}`}>
                         Ratan Mahal
                     </span>
-                    <span className={`text-[10px] tracking-widest uppercase ${isScrolled ? 'text-gold-dark' : 'text-gold'}`}>
+                    <span className={`text-[10px] tracking-widest uppercase ${showSolidNav ? 'text-gold-dark' : 'text-gold'}`}>
                         Resort & Hotel
                     </span>
                 </Link>
@@ -45,7 +51,7 @@ export default function Navbar() {
                         <Link
                             key={href}
                             href={href}
-                            className={`font-medium hover:text-gold transition-colors ${isScrolled ? 'text-royal-brown' : 'text-white'
+                            className={`font-medium hover:text-gold transition-colors ${showSolidNav ? 'text-royal-brown' : 'text-white'
                                 }`}
                         >
                             {label}
@@ -58,8 +64,8 @@ export default function Navbar() {
                     <a
                         href="tel:08854033167"
                         className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all ${isScrolled
-                                ? 'border-royal-brown text-royal-brown hover:bg-royal-brown hover:text-white'
-                                : 'border-white text-white hover:bg-white hover:text-royal-brown'
+                            ? 'border-royal-brown text-royal-brown hover:bg-royal-brown hover:text-white'
+                            : 'border-white text-white hover:bg-white hover:text-royal-brown'
                             }`}
                     >
                         <Phone size={18} />

@@ -6,12 +6,13 @@ import { Wifi, Tv, Wind, Coffee, Maximize } from 'lucide-react';
 const RoomCard = ({ title, price, description, image, features, hindiDesc }: any) => (
     <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col h-full group transition-all hover:shadow-2xl">
         <div className="relative h-64 overflow-hidden">
-            <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url('${image}')` }}
-            ></div>
+            <img
+                src={image}
+                alt={title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
-            <div className="absolute bottom-4 left-4 text-white">
+            <div className="absolute bottom-4 left-4 text-white z-10">
                 <h3 className="text-2xl font-serif font-bold">{title}</h3>
             </div>
         </div>
@@ -29,12 +30,15 @@ const RoomCard = ({ title, price, description, image, features, hindiDesc }: any
             )}
 
             <div className="grid grid-cols-2 gap-3 mb-6">
-                {features.map((Feature: any, idx: number) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs text-royal-brown/80">
-                        <Feature size={14} className="text-gold" />
-                        <span>{Feature.label}</span>
-                    </div>
-                ))}
+                {features.map((feature: any, idx: number) => {
+                    const Icon = feature.icon || Wifi;
+                    return (
+                        <div key={idx} className="flex items-center gap-2 text-xs text-royal-brown/80">
+                            <Icon size={16} className="text-gold shrink-0" />
+                            <span className="font-medium">{feature.label}</span>
+                        </div>
+                    );
+                })}
             </div>
 
             <div className="mt-auto pt-4 border-t border-gray-100 flex gap-3">
@@ -50,18 +54,19 @@ const RoomCard = ({ title, price, description, image, features, hindiDesc }: any
 );
 
 export default function Rooms() {
+    // Simplified Room Data Structure
     const rooms = [
         {
             title: "Deluxe Family Room",
-            image: "https://images.unsplash.com/photo-1590490360182-f33dfe616d46?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            image: "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
             description: "Spacious room perfect for families. Includes a king-size bed and a seating area.",
             hindiDesc: "परिवारों के लिए उत्तम। किंग साइज बेड और बैठने की जगह उपलब्ध।",
             features: [
-                { label: "Free Wi-Fi", size: 14, icon: Wifi }, // Passing component as icon prop if needed, or just rendering mostly consistent checks
+                { label: "Free Wi-Fi", icon: Wifi },
                 { label: "AC", icon: Wind },
                 { label: "Smart TV", icon: Tv },
                 { label: "Room Service", icon: Coffee }
-            ].map(f => ({ ...f, label: f.label, value: f })) // simplistic mapping for the card
+            ]
         },
         {
             title: "Super Deluxe Room",
@@ -89,15 +94,6 @@ export default function Rooms() {
         }
     ];
 
-    // Helper to standardise icons for the card
-    const getIcon = (label: string) => {
-        if (label.includes("Wi-Fi")) return Wifi;
-        if (label.includes("TV")) return Tv;
-        if (label.includes("AC") || label.includes("Heater")) return Wind;
-        if (label.includes("Service") || label.includes("Bar") || label.includes("Minibar")) return Coffee;
-        return Maximize;
-    };
-
     return (
         <div className="pt-24 pb-16 min-h-screen bg-off-white">
             <section className="container mx-auto px-4 mb-12 text-center">
@@ -114,7 +110,6 @@ export default function Rooms() {
                         <RoomCard
                             key={index}
                             {...room}
-                            features={room.features.map(f => ({ ...f, label: f.label, size: 16, type: getIcon(f.label) })).map((f: any) => f.type)}
                         />
                     ))}
                 </div>

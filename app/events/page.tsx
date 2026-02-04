@@ -8,7 +8,8 @@ export default function Events() {
                 <span className="text-gold font-bold tracking-widest uppercase text-sm">Celebrations</span>
                 <h1 className="text-4xl md:text-5xl font-serif text-royal-brown mt-2 mb-6">Events & Weddings</h1>
                 <p className="max-w-3xl mx-auto text-lg text-gray-600 font-light">
-                    Plan your dream wedding or corporate event at Ratan Mahal. Our expansive lawns and banquet halls provide the perfect backdrop for your special moments.
+                    <b>Most Loved Destination Wedding Resort & Choice of Celebrities & VVIPs.</b><br />
+                    Plan your dream wedding with #wedding at prices that will pleasantly surprise you. From "Epic Bridal Entry" to a "Mesmerizing Vibe", we create iconic memories.
                 </p>
             </section>
 
@@ -29,8 +30,8 @@ export default function Events() {
                                 <Users size={24} />
                             </div>
                             <div>
-                                <h3 className="text-xl font-serif font-bold text-royal-brown">Large Capacity</h3>
-                                <p className="text-gray-600">Ideally suited for large gatherings, from intimate engagements to grand receptions.</p>
+                                <h3 className="text-xl font-serif font-bold text-royal-brown">Packages for Everyone</h3>
+                                <p className="text-gray-600">Celeb, Luxe, and Mid-Budget packages available to suit your needs.</p>
                             </div>
                         </div>
 
@@ -39,8 +40,8 @@ export default function Events() {
                                 <Music size={24} />
                             </div>
                             <div>
-                                <h3 className="text-xl font-serif font-bold text-royal-brown">Entertainment & Decor</h3>
-                                <p className="text-gray-600">We assist with decoration, lighting, and sound systems to make your event lively.</p>
+                                <h3 className="text-xl font-serif font-bold text-royal-brown">Trending Decors & Themes</h3>
+                                <p className="text-gray-600">We specialize in trending themes and mesmerizing vibes for your special day.</p>
                             </div>
                         </div>
 
@@ -49,15 +50,15 @@ export default function Events() {
                                 <Camera size={24} />
                             </div>
                             <div>
-                                <h3 className="text-xl font-serif font-bold text-royal-brown">Picturesque Venues</h3>
-                                <p className="text-gray-600">Beautiful spots for wedding photography and pre-wedding shoots.</p>
+                                <h3 className="text-xl font-serif font-bold text-royal-brown">Epic Moments</h3>
+                                <p className="text-gray-600">From an Epic Bridal Entry to the Most Iconic #weddings, we handle it all.</p>
                             </div>
                         </div>
 
                         <div className="pt-4 border-t border-gray-200">
-                            <h4 className="text-royal-brown font-bold mb-4">Perfect For:</h4>
+                            <h4 className="text-royal-brown font-bold mb-4">Highlights:</h4>
                             <div className="flex flex-wrap gap-2">
-                                {['Weddings', 'Receptions', 'Birthday Parties', 'Corporate Meetings', 'Anniversaries'].map(tag => (
+                                {['#wedding', 'Destination Wedding', 'Epic Bridal Entry', 'Celeb Choice', 'Luxe Packages'].map(tag => (
                                     <span key={tag} className="bg-beige px-4 py-1 rounded-full text-sm text-royal-brown-light">{tag}</span>
                                 ))}
                             </div>

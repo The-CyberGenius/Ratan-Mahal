@@ -34,8 +34,11 @@ export default function Contact() {
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-royal-brown mb-1">Phone</h4>
-                                        <a href="tel:08854033167" className="text-gray-600 hover:text-gold transition-colors">088540 33167</a>
+                                        <h4 className="font-bold text-royal-brown mb-1">Bookings</h4>
+                                        <p className="text-gray-600">
+                                            <a href="tel:8854033167" className="hover:text-gold block">88540 33167</a>
+                                            <a href="tel:8854893167" className="hover:text-gold block">88548 93167</a>
+                                        </p>
                                     </div>
                                 </li>
                                 <li className="flex gap-4">

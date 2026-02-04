@@ -18,10 +18,10 @@ export default function Dining() {
             <section className="container mx-auto px-4 mb-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
-                        { icon: Soup, label: 'Authentic Indian', desc: 'Rich curries & Tandoori specials' },
-                        { icon: Pizza, label: 'Italian & Chinese', desc: 'Pizza, Pasta & Noodles' },
-                        { icon: Coffee, label: '24/7 Cafe', desc: 'Tea, Coffee & Snacks' },
-                        { icon: Utensils, label: 'Family Dining', desc: 'Spacious seating for groups' }
+                        { icon: Soup, label: 'Separate Veg Kitchen', desc: 'Pure vegetarian preparation available' },
+                        { icon: Utensils, label: 'Largest Party Buffets', desc: 'Best in town for gatherings' },
+                        { icon: Pizza, label: 'Multi-Cuisine', desc: 'Italian, Chinese & Indian' },
+                        { icon: Coffee, label: '24/7 Cafe', desc: 'Tea, Coffee & Snacks' }
                     ].map((item, idx) => (
                         <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-gold/10 hover:shadow-md transition-shadow text-center">
                             <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-gold-dark">
